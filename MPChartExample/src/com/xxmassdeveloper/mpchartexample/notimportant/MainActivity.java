@@ -65,87 +65,87 @@ public class MainActivity extends Activity implements OnItemClickListener {
         Utils.init(this);
 
         ArrayList<ContentItem> objects = new ArrayList<ContentItem>();
-
-        objects.add(new ContentItem("Line Chart", "A simple demonstration of the linechart."));
-        objects.add(new ContentItem("Line Chart (Dual YAxis)",
+int i =-1;
+        objects.add(new ContentItem(++i+"Line Chart", "A simple demonstration of the linechart."));
+        objects.add(new ContentItem(++i+"Line Chart (Dual YAxis)",
                 "Demonstration of the linechart with dual y-axis."));
-        objects.add(new ContentItem("Bar Chart", "A simple demonstration of the bar chart."));
-        objects.add(new ContentItem("Horizontal Bar Chart",
+        objects.add(new ContentItem(++i+"Bar Chart", "A simple demonstration of the bar chart."));
+        objects.add(new ContentItem(++i+"Horizontal Bar Chart",
                 "A simple demonstration of the horizontal bar chart."));
-        objects.add(new ContentItem("Combined Chart",
+        objects.add(new ContentItem(++i+"Combined Chart",
                 "Demonstrates how to create a combined chart (bar and line in this case)."));
-        objects.add(new ContentItem("Pie Chart", "A simple demonstration of the pie chart."));
-        objects.add(new ContentItem("Pie Chart with value lines", "A simple demonstration of the pie chart with polyline notes."));
-        objects.add(new ContentItem("Scatter Chart", "A simple demonstration of the scatter chart."));
-        objects.add(new ContentItem("Bubble Chart", "A simple demonstration of the bubble chart."));
-        objects.add(new ContentItem("Stacked Bar Chart",
+        objects.add(new ContentItem(++i+"Pie Chart", "A simple demonstration of the pie chart."));
+        objects.add(new ContentItem(++i+"Pie Chart with value lines", "A simple demonstration of the pie chart with polyline notes."));
+        objects.add(new ContentItem(++i+"Scatter Chart", "A simple demonstration of the scatter chart."));
+        objects.add(new ContentItem(++i+"Bubble Chart", "A simple demonstration of the bubble chart."));
+        objects.add(new ContentItem(++i+"Stacked Bar Chart",
                 "A simple demonstration of a bar chart with stacked bars."));
-        objects.add(new ContentItem("Stacked Bar Chart Negative",
+        objects.add(new ContentItem(++i+"Stacked Bar Chart Negative",
                 "A simple demonstration of stacked bars with negative and positive values."));
-        objects.add(new ContentItem("Another Bar Chart",
+        objects.add(new ContentItem(++i+"Another Bar Chart",
                 "Implementation of a BarChart that only shows values at the bottom."));
-        objects.add(new ContentItem("Multiple Lines Chart",
+        objects.add(new ContentItem(++i+"Multiple Lines Chart",
                 "A line chart with multiple DataSet objects. One color per DataSet."));
-        objects.add(new ContentItem("Multiple Bars Chart",
+        objects.add(new ContentItem(++i+"Multiple Bars Chart",
                 "A bar chart with multiple DataSet objects. One multiple colors per DataSet."));
         objects.add(new ContentItem(
-                "Charts in ViewPager Fragments",
+                ++i+  "Charts in ViewPager Fragments",
                 "Demonstration of charts inside ViewPager Fragments. In this example the focus was on the design and look and feel of the chart."));
         objects.add(new ContentItem(
-                "BarChart inside ListView",
+                ++i+  "BarChart inside ListView",
                 "Demonstrates the usage of a BarChart inside a ListView item."));
         objects.add(new ContentItem(
-                "Multiple charts inside ListView",
+                ++i+ "Multiple charts inside ListView",
                 "Demonstrates the usage of different chart types inside a ListView."));
         objects.add(new ContentItem(
-                "Inverted Line Chart",
+                ++i+ "Inverted Line Chart",
                 "Demonstrates the feature of inverting the y-axis."));
         objects.add(new ContentItem(
-                "Candle Stick Chart",
+                ++i+ "Candle Stick Chart",
                 "Demonstrates usage of the CandleStickChart."));
         objects.add(new ContentItem(
-                "Cubic Line Chart",
+                ++i+ "Cubic Line Chart",
                 "Demonstrates cubic lines in a LineChart."));
         objects.add(new ContentItem(
-                "Radar Chart",
+                ++i+ "Radar Chart",
                 "Demonstrates the use of a spider-web like (net) chart."));
         objects.add(new ContentItem(
-                "Colored Line Chart",
+                ++i+ "Colored Line Chart",
                 "Shows a LineChart with different background and line color."));
         objects.add(new ContentItem(
-                "Realtime Chart",
+                ++i+ "Realtime Chart",
                 "This chart is fed with new data in realtime. It also restrains the view on the x-axis."));
         objects.add(new ContentItem(
-                "Dynamical data adding",
+                ++i+  "Dynamical data adding",
                 "This Activity demonstrates dynamical adding of Entries and DataSets (real time graph)."));
         objects.add(new ContentItem(
-                "Performance Line Chart",
+                ++i+   "Performance Line Chart",
                 "Renders up to 30.000 objects smoothly."));
         objects.add(new ContentItem(
-                "Sinus Bar Chart",
+                ++i+   "Sinus Bar Chart",
                 "A Bar Chart plotting the sinus function with 8.000 values."));
         objects.add(new ContentItem(
-                "Chart in ScrollView",
+                ++i+   "Chart in ScrollView",
                 "This demonstrates how to use a chart inside a ScrollView."));
         objects.add(new ContentItem(
-                "BarChart positive / negative",
+                ++i+   "BarChart positive / negative",
                 "This demonstrates how to create a BarChart with positive and negative values in different colors."));
 
         ContentItem realm = new ContentItem(
-                "Realm.io Database",
+                ++i+ "Realm.io Database",
                 "This demonstrates how to use this library with Realm.io mobile database.");
         objects.add(realm);
 
         ContentItem time = new ContentItem(
-                "Time Chart",
+                ++i+  "Time Chart",
                 "Simple demonstration of a time-chart. This chart draws one line entry per hour originating from the current time in milliseconds.");
         time.isNew = true;
         objects.add(time);
         objects.add(new ContentItem(
-                "Filled LineChart",
+                ++i+   "Filled LineChart",
                 "This demonstrates how to fill an area between two LineDataSets."));
         objects.add(new ContentItem(
-                "Half PieChart",
+                ++i+  "Half PieChart",
                 "This demonstrates how to create a 180 degree PieChart."));
 
         MyAdapter adapter = new MyAdapter(this, objects);
